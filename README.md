@@ -1,2 +1,2 @@
 # ATM
-Pro
+Projek: "System wbudowany w bankomacie"
