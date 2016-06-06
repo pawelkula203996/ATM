@@ -4,21 +4,23 @@
 class Card
 {
 private:
-	//proponujê 0 - nie kradizona, 1 - kradziona
-	int kradziona;
+	//false - nie kradizona, true - kradziona
+	bool kradziona;
 	int pin;
 	int saldo;
 
 public:
-	Card(int kr, int pin, int zl);
+	Card();
+	Card(bool kr, int p, int zl);
+	~Card();
 
-	//porównuje pinz z pin2 zwraca true je¿eli siê zgadzaj¹
+	//porównuje pinz z pin2 zwraca true jeżeli się zgadzają
 	bool sprawdz_pin(int pin2);
-	//wysy³a true jeseli karta jest skardziona 
+	//wysyła true jeseli karta jest skardziona 
 	bool sprawdz_kradziona();
-	//zwraca wartosc srodki
+	//zwraca wartość salda(środki)
 	int get_saldo();
-	//zmienia wartosc srodki
+	//zmienia wartość salda(środki)
 	void set_saldo(int saldo);
 
 };
