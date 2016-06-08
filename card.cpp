@@ -31,3 +31,7 @@ void Card::set_saldo(int s){
 	saldo = s;
 }
 
+int Card::get_pin(){
+	return pin;
+}
+
