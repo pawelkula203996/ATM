@@ -22,6 +22,8 @@ public:
 	int get_saldo();
 	//zmienia wartość salda(środki)
 	void set_saldo(int saldo);
+	//zwraca nr pin
+	int get_pin();
 
 };
 
